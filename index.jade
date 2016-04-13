@@ -1,0 +1,452 @@
+doctype html
+html
+  head
+      title Start Using ES6 Today by Wes Bos
+      meta(charset='utf-8')
+      script(src='slides.js')
+      link(href='https://fonts.googleapis.com/css?family=Bangers|Open+Sans:400,700' rel='stylesheet' type='text/css')
+      link(href='styles.css'  rel='stylesheet' type='text/css')
+    body
+      section.slides.layout-regular.template-default
+        article.first
+          h1(style="font-size:250px;") START USING<br>ES6 TODAY
+          br
+          a(href='http://wesbos.com') wesbos.com
+          a(href='http://twitter.com/wesbos') @wesbos
+
+        article
+          h1(style="font-size:170px;") I&apos;m<br>Wes Bos
+          br
+          img(src="images/canada-flag.png")
+
+        article
+          h2(style="font-size:60px;") These slides will be available shortly after this talk <br>I&apos;ll tweet the link out.
+          img(src='images/Twitter_logo_white.png', width='300' style="margin:100px auto")
+
+          h2
+            a(href='http://twitter.com/wesbos', target='_blank') @wesbos
+
+        article(style='background:white;')
+          a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
+            img(src='https://reactforbeginners.com/images/facebook-share.png')
+          a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ReactForBeginners.com
+
+        article(style='background:white;')
+          a(href='https://SublimeTextBook.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
+            img(src='images/cover.png')
+          a(href='https://SublimeTextBook.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') SublimeTextBook.com
+
+        article.plain
+          img(src="images/commandline.png")
+          a(href="http://commandlinepoweruser.com") CommandLinePowerUser.com
+
+        article.plain
+          img.high(src="images/flexbox.png")
+          a(href="http://flexbox.io") flexbox.io
+
+        article
+          h1 Let's talk about ES6
+
+        article.plain(style="background:url(images/laptop-sticker.jpg) center; background-size:cover")
+
+
+        article
+          h1 Life Makers
+          p.sub Features that make life soooo much better
+
+        article
+          h1 let and const
+          p.sub Some say you should never use `var` again
+
+        article
+          h1 2 New ways to declare varaibles
+
+        article
+          h2 Block Scoped
+
+        article
+          img.high(src="http://wes.io/fgHm/content")
+
+        article
+          img.high(src="http://wes.io/ffxI/content")
+
+        article
+          img.wide(src="http://wes.io/fg83/content")
+
+        article
+          h1 Handy use of let
+
+        article
+          img.wide(src="http://wes.io/fh59/content")
+
+        article
+          img.high(src="http://wes.io/fgzx/content")
+
+
+        article
+          h2 But...
+
+        article
+          img.wide(src="http://wes.io/fgh5/content")
+
+        article
+          img.wide(src="http://wes.io/fgnB/content")
+
+        article
+          h2 wat?
+          p Since `age` is globally scoped, by the time we console.log, it's been overwritten!
+
+        article
+          h1 Solution:<br> Use let!
+
+        article
+          img.wide(src="http://wes.io/fhDp/content")
+
+        article
+          img.high(src="http://wes.io/fgx0/content")
+
+        article
+          h1 const
+          p.sub block scoped exactly like let
+
+        article
+          h1 const vars cannot be changed*
+          p.sub *1 sec
+
+        article
+          h2 On Purpose
+          img.wide(src="http://wes.io/fgIK/content")
+
+        article
+          h2 By Accident
+          img.wide(src="http://wes.io/fg1n/content")
+
+        article
+          h2 Still Block Scoped
+
+        article
+          img.high(src="http://wes.io/fgbz/content")
+
+        article
+          h1 const is not immutable!
+          p.sub Allow me to explain
+
+        article
+          img.wide(src="http://wes.io/fggs/content")
+
+        article
+          img.wide(src="http://wes.io/fgfW/content")
+
+        article
+          h3(style="color:white; font-size:150px;") Using const makes sure we can't wipe<br>- or rebind -<br>wes out
+
+        article
+          img.wide(src="http://wes.io/fgir/content")
+
+        article
+          img.wide(src="http://wes.io/fgnM/content")
+
+        article
+          h1 Template Strings
+          p.sub "Because everyone " + <span class='hl'>sucks</span> + " at concatination."
+
+        article
+          h2 'Single Quotes'
+          p var name = 'Wes Bos';
+
+        article
+          h2 "Double Quotes"
+          p var puppy = "Snickers";
+
+        article
+          h2 Introducing `backticks`
+          p const talk = `Start using ES6 today!`;
+
+        article
+          h2 The Old Way
+          pre.prettyprint: code.
+              var name = 'Snickers';
+              var age = 2;
+              var sentence = 'My dog ' + name + ' is ' + age * 7 + 'years old.';
+
+        article
+          h2 The ES6 Way!
+          img(src="http://wes.io/fffe/lol")
+
+        article
+          h2 Run JS inside ${}
+          img(src="http://wes.io/ffjW/lol")
+
+        article
+          h2 Use an existing Function
+          img(src="http://wes.io/ffq2/content")
+
+        article
+          h1 Handy for HTML
+          p.sub (Hotmail Markup Language)
+
+        article
+          img.wide(src="http://wes.io/ffls/content")
+
+        article
+          img.high(src="http://wes.io/ffjT/content")
+
+        article
+          h1 JavaScript is a templating Language!
+
+        article
+          h1 Looping
+
+        article
+          img.high(src="http://wes.io/ffsj/content")
+
+        article
+          img.wide(src="http://wes.io/fgUE/content")
+
+        article
+          h1 If<br>Statements
+          p.sub Use a ternerary operator!
+
+        article
+          img.high(src="http://wes.io/fgCq/content")
+
+        article
+          h1 Use Render Functions
+          p.sub Just like React!
+
+        article
+          img.wide(src="http://wes.io/fgHO/content")
+
+        article
+          img.high(src="http://wes.io/fgLW/content")
+
+        article
+          img.wide(src="http://wes.io/fgCZ/content")
+
+        article
+          img.wide(src="http://wes.io/ffvp/content")
+
+        article
+          h1 Default function arguments
+
+        article
+          img.wide(src="http://wes.io/fgsY/content")
+
+        article
+          img.high(src="http://wes.io/fgnc/content")
+
+
+        //- HEATING UP
+
+        article
+          h1 Heating Up!
+          p.sub Let's get a little more advanced
+
+        article
+          h1.white Arrow <span class="hl">Fun</span>ctions
+          p.sub ugh, dad.
+
+        article
+          img.wide(src="http://wes.io/fgl6/content")
+
+        article
+          h2 Replace function with =>
+
+        article
+          img.wide(src="http://wes.io/fgvC/content")
+
+        article
+          h2 Single Argument
+          p Lose the parens
+          small (if you prefer)
+
+        article
+          img.wide(src="http://wes.io/fgck/content")
+
+        article
+          h2 Implicit Return
+
+        article
+          img.wide(src="http://wes.io/fh1U/content")
+
+        article
+          img.wide(src="http://wes.io/fgXl/content")
+
+        article
+          img.wide(src="http://wes.io/fh6L/content")
+          img.wide(src="http://wes.io/fgiQ/content")
+
+        article
+          h1 this
+
+        article
+          h3.white With Arrow functions, the value of <span class="hl">this</span> does not change. <span class="hl">this</span> is equal to whatever the parent is bound to.
+
+        article
+          img.high(src="http://wes.io/fgzh/content")
+
+        article
+          img.high(src="http://wes.io/fgfo/content")
+
+        article
+          img.high(src="http://wes.io/fgmB/content")
+
+        article
+          h1 Enhanced Object Literals
+
+        article
+          h2 Same Name Properties
+
+        article
+          img.high(src="http://wes.io/fgrF/content")
+
+        article
+          img.high(src="http://wes.io/fh01/content")
+
+        article
+          img.wide(src="http://wes.io/fgdA/content")
+
+        article
+          h2 Method Definition
+
+        article
+          img.high(src="http://wes.io/fhAQ/content")
+
+        article
+          h1 Tooling
+          p.sub A Quick Overview of what you need to write ES6 Today
+
+        article
+          h2 Transpiling
+          p Convert ES6 code to ES5
+
+        article(style="background:#f5da55;").plain
+          img(src="images/babel.svg")
+
+        article
+          h2 Syntax
+          img.wide(src="http://wes.io/fh13/content", alt="")
+
+        article
+          h2 New Features
+          p Promises, Sets, Maps...
+          img(src="http://wes.io/fhAe/content", alt="")
+
+        article
+          h2 The Un-polyfillables and un-transpileables
+          p Symbols, Proxies, Parts of Subclasses
+
+        article
+          h1 Deep End  🏊
+          p.sub New concepts for many programmers
+
+        article
+          h2(style="letter-spacing:30px;") destructuring
+
+        article
+          h3.white Put simply, it allows us to create and assign multiple variables in a single line of code. It works with both Objects and Arrays.
+
+        article
+          img.high(src="http://wes.io/fh0F/content")
+
+        article
+          h3.white I need to create three variables called <span class="hl">`first`</span>, <span class="hl">`city`</span>, and <span class="hl">`twitter`</span>. Normally we might do something like this:
+
+          img(src="http://wes.io/fh8u/content")
+
+        article
+          h3.white Create 3 variables in 1 shot
+          img.wide(src="http://wes.io/fgbo/content", alt="")
+
+        article
+          img.high(src="http://wes.io/fgWF/content", alt="")
+
+        article
+          h3.white rename while you destructure
+          img.wide(src="http://wes.io/fgmT/content")
+
+        article
+          h3.white ...with arrays too!
+          img.wide(src="http://wes.io/fgbG/content")
+
+        article
+          h2 Swap values with destructuring
+
+        article
+          h3.white Old confusing way
+          img.high(src="http://wes.io/fgz3/content")
+
+        article
+          h3.white Swap with Destructuring!
+          img.wide(src="http://wes.io/fgbJ/content")
+
+        article
+          h3 Return Multiple Values from a function
+
+        article
+          img.high(src="http://wes.io/fh2l/content", alt="")
+
+        article
+          img.wide(src="http://wes.io/fgWl/content")
+
+        article
+          h3 Pick + Choose
+          img.wide(src="http://wes.io/fgyV/content")
+
+        article
+          h1 Sets
+          p.sub Kind of like the Arrays<br> you have always wanted
+
+        article
+          h3.white(style="font-size:100px")
+            em "A Set in ES6 is <span class="hl">like a unique array</span> with a <span class="hl">nice API</span> for adding/removing/checking its items."
+
+        article
+          h3.white Create a Set
+          img.wide(src="http://wes.io/fgYU/content")
+
+        article
+          h3.white Only Unique Data
+          img.wide(src="http://wes.io/fgtC/content")
+
+        article
+          h3.white Easy To Delete items without knowing index
+          img.wide(src="http://wes.io/fgrg/content")
+
+        article
+          h3.white Nice API for checking if something exists
+          img.wide(src="http://wes.io/fgfu/content")
+
+        article
+          h3.white Easy to Loop Over with ES6 `for of`
+          img.wide(src="http://wes.io/fgzX/content")
+
+        article
+          h3.white Any type can be added to a set
+          img.wide(src="http://wes.io/fgzk/content")
+
+        article
+          h1 Holy Smokes!
+          p.sub That was a lot
+
+        article
+          h1 We're only scratching the surface!
+
+        article
+          h1 ES7
+          p.sub GET READY
+
+        article
+          h1 jk only 2 things
+
+        article
+          img.wide(src="http://wes.io/fhEM/content")
+
+        article
+          h1 Lots of time to Learn ES6
+          p.sub But get at it!
+
+        article
+          h1.big Thanks<br>Folks!
+          a(href="http://twitter.com/wesbos") @wesbos
+          a(href="http://wesbos.com") WesBos.com
